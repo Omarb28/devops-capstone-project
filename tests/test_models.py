@@ -175,8 +175,3 @@ class TestAccount(unittest.TestCase):
         """It should not Deserialize an account with a TypeError"""
         account = Account()
         self.assertRaises(DataValidationError, account.deserialize, [])
-
-    def test_deserialize_with_type_error(self):
-        """It should not Deserialize an account with a TypeError"""
-        account = Account()
-        self.assertRaises(DataValidationError, account.deserialize, [])
